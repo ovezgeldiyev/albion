@@ -1,0 +1,277 @@
+// 1450px
+@include xxxxlg-xxxxxlg {
+    // @include hero-xxxxlg-xxxxxlg;
+}
+// 1380px
+@include xxxlg-xxxxlg {
+    h1 {
+        font-size: 34px;
+    }
+    .timer {
+        font-size: 50px;
+        hr {
+            height: 60px;
+        }
+  
+    }
+    @include hero-xxxlg-xxxxlg;
+    @include new-xxxlg-xxxxlg;
+
+}
+// 1250px
+@include xlg-xxlg-extra {
+    @include hero-xlg-xxlg-extra;
+}
+// 1180px
+@include xlg-xxlg {
+    .auto__container {
+        padding: 0 30px;
+    }
+ 
+    .arrow {
+        width: 86px;
+        height: 86px;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    .timer {
+        font-size: 45px;
+        hr {
+            height: 50px;
+        }
+        b {
+            font-size: 16px;
+            margin-bottom: 8px;
+        }
+    }
+    .modal {
+        &__inner {
+            width: calc(100% - 140px);
+        }
+        &Close {
+            width: 30px;
+            height: 30px;
+            left: calc(100% + 10px);
+        }
+    }
+    @include hero-xlg-xxlg;
+    @include brand-xlg-xxlg;
+    @include room-xlg-xxlg;
+    @include about-xlg-xxlg;
+    @include new-xlg-xxlg;
+    @include intro-xlg-xxlg;
+    @include contact-xlg-xxlg;
+
+}
+// 1024px
+@include lg-xlg {
+    ::-webkit-scrollbar{
+        display: none;
+    }
+    h2 {
+        font-size: 28px;
+        line-height: 40px;
+    }
+    h3 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+    @include hero-lg-xlg;
+    @include room-lg-xlg;
+    @include new-lg-xlg;
+    @include intro-lg-xlg;
+    @include contact-lg-xlg;
+
+}
+// 930px
+@include md-lg {
+    h1 {
+        font-size: 26px;
+    }
+    .timer {
+        font-size: 40px;
+        hr {
+            height: 46px;
+        }
+        b {
+            font-size: 14px;
+            margin-bottom: 6px;
+        }
+    }
+    .arrow {
+        width: 70px;
+        height: 70px;
+        img {
+            width: 43%;
+        }
+    }
+    @include hero-md-lg;
+    @include brand-md-lg;
+    @include room-md-lg;
+    @include about-md-lg;
+    @include new-md-lg;
+    @include intro-md-lg;
+
+}
+// 750px
+@include sm-md {
+    .auto__container {
+        padding: 0 20px;
+    }
+    h2 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+    h3 {
+        font-size: 20px;
+        line-height: 28px;
+    }
+    p {
+        font-size: 16px;
+        line-height: 24px;
+        &.ex {
+            font-size: 14px;
+            line-height: 22px;
+        }
+        &.sm {
+            font-size: 13px;
+            line-height: 20px;
+        }
+    }
+    .timer {
+        display: flex;
+        margin-top: 10px;
+    }
+    .modal {
+        &__inner {
+           width: 100%;
+            position: static;
+        }
+        &Close {
+            width: 25px;
+            height: 25px;
+            left: unset;
+            top: 20px;
+            right: 20px;
+        }
+    }
+    @include hero-sm-md;
+    @include room-sm-md;
+    @include about-sm-md;
+    @include new-sm-md;
+
+}
+// 650px
+@include sm-md-extra {
+    .arrow {
+        width: 56px;
+        height: 56px;
+    }
+    @include hero-sm-md-extra;
+    @include brand-sm-md-extra;
+    @include new-sm-md-extra;
+    @include about-sm-md-extra;
+    @include contact-sm-md-extra;
+
+}
+// 540px
+@include xsm-sm  {
+    h1 {
+        font-size: 26px;
+    }
+    .timer {
+        font-size: 30px;
+        hr {
+            height: 36px;
+            width: 1px;
+            margin: 0 6px;
+        }
+        b {
+            font-size: 12px;
+            margin-bottom: 4px;
+        }
+    }
+    @include hero-xsm-sm;
+    @include new-xsm-sm;
+    @include intro-xsm-sm;
+    @include contact-xsm-sm;
+
+}
+// 440px
+@include xxsm-xsm  {
+    h1 {
+        font-size: 24px;
+    }
+    p {
+        font-size: 14px;
+        line-height: 22px;
+        &.ex {
+            font-size: 13px;
+            line-height: 20px;
+        }
+        &.sm {
+            font-size: 13px;
+            line-height: 20px;
+        }
+    }
+    .arrow {
+        width: 44px;
+        height: 44px;
+    }
+    .timer {
+        font-size: 28px;
+        letter-spacing: 2px;
+        hr {
+            height: 30px;
+            margin: 0 5px;
+        }
+        b {
+            font-size: 11px;
+            margin-bottom: 4px;
+            letter-spacing: .6px;
+        }
+    }
+    @include hero-xxsm-xsm;
+    @include brand-xxsm-xsm;
+    @include room-xxsm-xsm;
+    @include new-xxsm-xsm;
+    @include about-xxsm-xsm;
+    @include intro-xxsm-xsm;
+    @include contact-xxsm-xsm;
+
+}
+// 390px
+@include xxxsm-xxsm  {
+    p {
+        font-size: 13px;
+        line-height: 20px;
+    }
+    .timer {
+        font-size: 24px;
+        letter-spacing: 2px;
+    }
+    // @include hero-xxxsm-xxsm;
+}
+// 350px
+@include xxxxsm-xxxsm  {
+    .auto__container {
+        padding: 0 15px;
+    }
+    h1 {
+        font-size: 22px;
+    }
+    .timer {
+        font-size: 20px;
+        letter-spacing: 1px;
+        hr {
+            height: 20px;
+            margin: 0 4px;
+        }
+        b {
+            font-size: 9px;
+            margin: 0 0 1px 2px;
+            letter-spacing: 0;
+        }
+    }
+}

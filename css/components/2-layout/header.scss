@@ -1,0 +1,98 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  background-color: $white;
+  &.sticky  {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   animation-name: sticky;
+   animation-duration: .4s;
+   box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.16);;
+  }
+  .auto__container {
+    max-width: 1920px;
+    padding: 0 30px;
+  }
+  &__inner {
+    padding: 30px 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &-side {
+      display: flex;
+      align-items: center;
+    }
+    &-logo {
+      display: flex;
+      align-items: center;
+      margin-right: 50px;
+      &-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          width: 100%;
+        }
+      }
+      span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 15px;
+        width: 45px;
+        height: 45px;
+        img {
+          width: 100%;
+        }
+      }
+    }
+    &-buttons {
+      display: flex;
+      align-items: center;
+      a {
+        width: 16px;
+        height: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 22px;
+        &:last-of-type {
+          margin: 0;
+        }
+        img {
+          width: 100%;
+        }
+        &.sm {
+          width: 12px;
+        }
+      }
+    }
+  }
+}
+// 1024px
+@mixin header-lg-xlg {
+    .header {
+    
+    }
+}
+// 540px
+@mixin header-xsm-sm {
+    .header {
+    
+    }
+}
+@keyframes sticky {
+    0% {
+      top: -60px;
+      opacity: 0;
+    }
+    100% {
+      top: 0;
+      opacity: 1;
+    }
+  }
